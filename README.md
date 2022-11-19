@@ -29,7 +29,8 @@ contract.
 * [0x9fCE35e475Fdd84DB06eEc4cbE65028d6F9C9d01](https://etherscan.io/address/0x9fCE35e475Fdd84DB06eEc4cbE65028d6F9C9d01)
 * [0xb08B382f09029AB7cE3CD486540aed0ed62680E3](https://etherscan.io/address/0xb08B382f09029AB7cE3CD486540aed0ed62680E3)
 
-The current owners were [set in November 2021](https://etherscan.io/tx/0xd1ac39233b025c97d847c0946fa4de3f408d200788f7c7b200d9d51e7d5b6268), and since that time, they have *never* 
+The contract owners have changed [3 times](https://bloxy.info/txs/calls_sc/0x0644bd0248d5f89e4f6e845a91d15c23591e5d33?signature_id=1494288).
+The current owners were [set in February 2022](https://etherscan.io/tx/0xb84579abb8df34672e5d1fcd57da30fec4fcf6900f63ce80ddd976c57e1d69f6), and since that time, they have *never* 
 interacted with the contract.
 
 The USDP contract is also "[Pausable](https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable)", meaning that the owner can pause the contract at will.  In the context of 

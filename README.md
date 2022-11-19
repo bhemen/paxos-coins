@@ -48,11 +48,11 @@ The file [analysis/usdp_frozen_funds.py](analysis/usdp_frozen_funds.py) looks at
 
 There are three key roles that control all aspects of USDP.
 
-* **[Owner](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33))** The owner can [pause](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L346) the contract, 
+* **[Owner](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33)** - The owner can [pause](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L346) the contract, 
 [change the AssetProtectionRole](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L368) and [change the SupplyController role](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L429).
-* **[AssetProtectionRole](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33)** The AssetProtectionRole can [freeze](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L429) and [https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L392](unfreeze) 
+* **[AssetProtectionRole](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33)** - The AssetProtectionRole can [freeze](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L429) and [https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L392](unfreeze) 
 addresses.
-* **[SupplyController](https://etherscan.io/address/0xE25a329d385f77df5D4eD56265babe2b99A5436e)** The SupplyController is in charge of [minting](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L445) and [burning](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L458) 
+* **[SupplyController](https://etherscan.io/address/0xE25a329d385f77df5D4eD56265babe2b99A5436e)** - The SupplyController is in charge of [minting](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L445) and [burning](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L458) 
 tokens.
 
 This separation of roles is good security practice, and it is odd that competing stablecoins like USDC and USDT do not separate roles as cleanly.

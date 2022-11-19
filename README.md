@@ -18,7 +18,7 @@ The USDP contract is a "proxy" contract following the [OpenZeppelin proxy standa
 functionality of the contract can be changed arbitrarily by the "owner".
 
 The Owner is [0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33).  
-The owner is a [3](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33#readContract#F1)-out-of-7 [Simple Multisig](https://github.com/christianlundkvist/simple-multisig) 
+The Owner is itself a contract, in particular, the Owner is a [3](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33#readContract#F1)-out-of-7 [Simple Multisig](https://github.com/christianlundkvist/simple-multisig) 
 contract.
 
 * [0x3eDD0d6562e9321Fb4a95e52576eE7f0b5Aa017e](https://etherscan.io/address/0x3eDD0d6562e9321Fb4a95e52576eE7f0b5Aa017e)

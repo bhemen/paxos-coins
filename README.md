@@ -30,7 +30,7 @@ contract.
 * [0xb08B382f09029AB7cE3CD486540aed0ed62680E3](https://etherscan.io/address/0xb08B382f09029AB7cE3CD486540aed0ed62680E3)
 
 The USDP contract is also "[Pausable](https://docs.openzeppelin.com/contracts/4.x/api/security#Pausable)", meaning that the owner can pause the contract at will.  In the context of 
-USDT, pausing the contract prevents all transfers (including mints and burns).
+USDP, pausing the contract prevents all transfers (including mints and burns).
 
 ## Tools
 
@@ -46,8 +46,7 @@ The file [analysis/usdp_frozen_funds.py](analysis/usdp_frozen_funds.py) looks at
 
 ## Who's in charge?
 
-All the functionality of the USDT is controlled by the contract owner [0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828](https://etherscan.io/address/0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828).
-This means that there is no separation of roles, the same (3-out-of-5) multisig account is in control of issuing, redeeming, blacklisting, clawbacks and pausing.
+There are three key roles that control all aspects of USDP.
 
 * **[Owner](https://etherscan.io/address/0x0644Bd0248d5F89e4F6E845a91D15c23591e5D33))** The owner can [pause](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L346) the contract, 
 [change the AssetProtectionRole](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L368) and [change the SupplyController role](https://github.com/paxosglobal/usdp-contracts/blob/master/contracts/USDPImplementationV3.sol#L429).
@@ -60,7 +59,7 @@ This separation of roles is good security practice, and it is odd that competing
 
 ### Minting
 
-USDT calls the process of "minting" new tokens "increaseSupply."
+USDP calls the process of "minting" new tokens "increaseSupply."
 Issuing new USDP is controlled by the "SupplyController" [0xE25a329d385f77df5D4eD56265babe2b99A5436e](https://etherscan.io/address/0xE25a329d385f77df5D4eD56265babe2b99A5436e).
 
 The SupplyController is a contract (rather than an Externally Owned Account), but the source code for the contract has not been supplied to Etherscan, 
